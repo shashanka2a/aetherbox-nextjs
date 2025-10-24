@@ -1,0 +1,16 @@
+{
+  "name": "AetherBox - Compute. Unbound.",
+  "short_name": "AetherBox",
+  "description": "From the cloud of the gods to the edge of the earth — we bring Aether closer.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0F1229",
+  "theme_color": "#7AC8FF",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

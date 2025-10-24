@@ -11,29 +11,29 @@ export function Reliability() {
 
   const outages = [
     {
-      date: "December 2024",
+      date: "October 20, 2025",
       provider: "AWS",
-      duration: "12+ hours",
-      impact: "Millions of users",
-      description: "US-East-1 region outage affecting major services including Slack, Discord, and streaming platforms",
-      icon: AlertTriangle,
-      color: "#d4183d"
-    },
-    {
-      date: "November 2024", 
-      provider: "Google Cloud",
-      duration: "8 hours",
+      duration: "15+ hours",
       impact: "Global services",
-      description: "Multi-region authentication service failure disrupting YouTube, Gmail, and Google Workspace",
+      description: "US-East-1 region DNS failure cascading to EC2, Lambda, S3, RDS. Affected Microsoft 365, Slack, Disney+, Amazon Alexa, DoorDash, and major financial institutions",
       icon: AlertTriangle,
       color: "#d4183d"
     },
     {
-      date: "October 2024",
+      date: "September 2024", 
+      provider: "Google Cloud",
+      duration: "12 hours",
+      impact: "Global services",
+      description: "Authentication service failure disrupting YouTube, Gmail, Google Workspace, and Google Cloud Platform services worldwide",
+      icon: AlertTriangle,
+      color: "#d4183d"
+    },
+    {
+      date: "August 2024",
       provider: "Microsoft Azure",
-      duration: "6 hours", 
+      duration: "8 hours", 
       impact: "Enterprise customers",
-      description: "Power grid failure in European data centers causing cascading service disruptions",
+      description: "Power grid failure in European data centers causing cascading service disruptions across Office 365, Teams, and Azure services",
       icon: AlertTriangle,
       color: "#d4183d"
     }

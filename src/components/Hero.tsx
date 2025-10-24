@@ -6,7 +6,7 @@ import { ImageWithFallback } from "./figma/ImageWithFallback";
 
 export function Hero() {
   return (
-    <section className="relative h-[85vh] overflow-hidden bg-gradient-to-br from-[#1B1F3B] via-[#1B1F3B] to-[#7AC8FF]/20">
+    <section className="relative min-h-[100vh] md:h-[85vh] overflow-hidden bg-gradient-to-br from-[#1B1F3B] via-[#1B1F3B] to-[#7AC8FF]/20">
       {/* Animated background gradient orbs */}
       <motion.div
         className="absolute top-1/4 left-1/4 w-96 h-96 rounded-full bg-[#7AC8FF]/10 blur-3xl"
@@ -33,8 +33,8 @@ export function Hero() {
         }}
       />
 
-      <div className="relative container mx-auto px-6 h-full flex items-center">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center w-full">
+      <div className="relative container mx-auto px-4 md:px-6 h-full flex items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center w-full">
           {/* Left: Text Content */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -43,7 +43,7 @@ export function Hero() {
             className="z-10"
           >
             <motion.h1
-              className="text-[8rem] leading-none tracking-tight text-white mb-6"
+              className="text-5xl md:text-6xl lg:text-[8rem] leading-none tracking-tight text-white mb-4 md:mb-6"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.3 }}
@@ -54,7 +54,7 @@ export function Hero() {
             </motion.h1>
             
             <motion.p
-              className="text-xl text-[#7AC8FF]/90 mb-8 max-w-lg"
+              className="text-lg md:text-xl text-[#7AC8FF]/90 mb-6 md:mb-8 max-w-lg"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.5 }}
@@ -63,7 +63,7 @@ export function Hero() {
             </motion.p>
 
             <motion.div
-              className="flex gap-4"
+              className="flex flex-col sm:flex-row gap-4"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.7 }}

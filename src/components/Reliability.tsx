@@ -41,38 +41,38 @@ export function Reliability() {
 
 
   return (
-    <section ref={ref} className="py-32 bg-gradient-to-b from-[#0F1229] to-[#1B1F3B] relative overflow-hidden">
+    <section ref={ref} className="py-16 md:py-32 bg-gradient-to-b from-[#0F1229] to-[#1B1F3B] relative overflow-hidden">
       {/* Background effects */}
       <div className="absolute inset-0 bg-gradient-to-br from-[#d4183d]/5 via-transparent to-[#7AC8FF]/5" />
       
-      <div className="container mx-auto px-6 relative z-10">
+      <div className="container mx-auto px-4 md:px-6 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
-          className="text-center mb-20"
+          className="text-center mb-12 md:mb-20"
         >
-          <h2 className="text-6xl text-white mb-6">
+          <h2 className="text-3xl md:text-6xl text-white mb-4 md:mb-6">
             The Hyperscale Problem
           </h2>
-          <p className="text-xl text-white/60 max-w-3xl mx-auto">
+          <p className="text-lg md:text-xl text-white/60 max-w-3xl mx-auto px-4">
             Recent outages from AWS, Google Cloud, and Azure have exposed the fragility 
             of centralized infrastructure. When hyperscalers fail, the entire internet feels it.
           </p>
         </motion.div>
 
         {/* Recent Outages */}
-        <div className="mb-20">
+        <div className="mb-12 md:mb-20">
           <motion.h3
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ delay: 0.2 }}
-            className="text-3xl text-white mb-12 text-center"
+            className="text-2xl md:text-3xl text-white mb-8 md:mb-12 text-center"
           >
             Recent Major Outages
           </motion.h3>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
             {outages.map((outage, index) => {
               const Icon = outage.icon;
               return (
@@ -81,7 +81,7 @@ export function Reliability() {
                   initial={{ opacity: 0, y: 30 }}
                   animate={isInView ? { opacity: 1, y: 0 } : {}}
                   transition={{ delay: 0.4 + index * 0.1 }}
-                  className="relative bg-[#0F1229] rounded-2xl p-6 border border-red-500/20 hover:border-red-500/40 transition-all duration-300 group"
+                  className="relative bg-[#0F1229] rounded-2xl p-4 md:p-6 border border-red-500/20 hover:border-red-500/40 transition-all duration-300 group"
                 >
                   <div className="flex items-center gap-3 mb-4">
                     <div className="w-10 h-10 rounded-lg bg-red-500/20 flex items-center justify-center">
@@ -124,26 +124,26 @@ export function Reliability() {
           transition={{ delay: 1.4 }}
           className="text-center mt-16"
         >
-          <div className="bg-gradient-to-r from-[#7AC8FF]/10 to-[#F5C542]/10 rounded-2xl p-8 border border-[#7AC8FF]/20">
-            <h4 className="text-2xl text-white mb-4">
+          <div className="bg-gradient-to-r from-[#7AC8FF]/10 to-[#F5C542]/10 rounded-2xl p-6 md:p-8 border border-[#7AC8FF]/20">
+            <h4 className="text-xl md:text-2xl text-white mb-4">
               Don't Let Hyperscale Outages Break Your Business
             </h4>
-            <p className="text-white/60 mb-6 max-w-2xl mx-auto">
+            <p className="text-white/60 mb-6 max-w-2xl mx-auto text-sm md:text-base">
               Join the decentralized future. Deploy resilient edge infrastructure 
               that keeps your applications running even when the cloud giants fail.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <div className="text-center">
-                <div className="text-3xl text-[#7AC8FF] font-bold">99.9%</div>
-                <div className="text-white/60">Uptime SLA</div>
+                <div className="text-2xl md:text-3xl text-[#7AC8FF] font-bold">99.9%</div>
+                <div className="text-white/60 text-sm">Uptime SLA</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl text-[#F5C542] font-bold">0</div>
-                <div className="text-white/60">Single Points of Failure</div>
+                <div className="text-2xl md:text-3xl text-[#F5C542] font-bold">0</div>
+                <div className="text-white/60 text-sm">Single Points of Failure</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl text-[#7AC8FF] font-bold">100%</div>
-                <div className="text-white/60">Renewable Energy</div>
+                <div className="text-2xl md:text-3xl text-[#7AC8FF] font-bold">100%</div>
+                <div className="text-white/60 text-sm">Renewable Energy</div>
               </div>
             </div>
           </div>

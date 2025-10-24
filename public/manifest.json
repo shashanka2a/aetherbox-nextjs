@@ -1,7 +1,7 @@
 {
   "name": "AetherBox - Compute. Unbound.",
   "short_name": "AetherBox",
-  "description": "From the cloud of the gods to the edge of the earth — we bring Aether closer.",
+  "description": "Deploy data centers anywhere in the world. Solar-powered, self-managed, and built for businesses that need reliable computing without the cloud.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#0F1229",

@@ -1,6 +1,6 @@
 # AetherBox - Compute. Unbound.
 
-From the cloud of the gods to the edge of the earth — we bring Aether closer.
+Deploy data centers anywhere in the world. Solar-powered, self-managed, and built for businesses that need reliable computing without the cloud.
 
 A modern, production-ready Next.js application showcasing AetherBox's vision for sustainable, decentralized edge computing infrastructure.
 

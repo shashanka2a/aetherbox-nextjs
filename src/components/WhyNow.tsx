@@ -53,7 +53,7 @@ export function WhyNow() {
           className="text-center mb-20"
         >
           <h2 className="text-6xl text-white mb-6">
-            The Edge is the New Frontier.
+            The Market Opportunity
           </h2>
           <p className="text-xl text-white/60 max-w-3xl mx-auto">
             As hyperscalers reach capacity in Tier-1 markets, the explosive growth 

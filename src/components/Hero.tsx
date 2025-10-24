@@ -59,7 +59,7 @@ export function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.5 }}
             >
-              From the cloud of the gods to the edge of the earth — we bring Aether closer.
+              Deploy data centers anywhere in the world. Solar-powered, self-managed, and built for businesses that need reliable computing without the cloud.
             </motion.p>
 
             <motion.div

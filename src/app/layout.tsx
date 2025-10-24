@@ -9,7 +9,7 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: "AetherBox - Compute. Unbound.",
-  description: "From the cloud of the gods to the edge of the earth — we bring Aether closer. Redefining edge computing with sustainable, decentralized infrastructure.",
+  description: "Deploy data centers anywhere in the world. Solar-powered, self-managed, and built for businesses that need reliable computing without the cloud. Redefining edge computing with sustainable, decentralized infrastructure.",
   keywords: ["cloud computing", "edge computing", "distributed systems", "AetherBox", "sustainable infrastructure", "renewable energy", "data centers", "colocation"],
   authors: [{ name: "AetherBox Team" }],
   creator: "AetherBox",
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "AetherBox - Compute. Unbound.",
-    description: "From the cloud of the gods to the edge of the earth — we bring Aether closer. Redefining edge computing with sustainable, decentralized infrastructure.",
+    description: "Deploy data centers anywhere in the world. Solar-powered, self-managed, and built for businesses that need reliable computing without the cloud. Redefining edge computing with sustainable, decentralized infrastructure.",
     type: "website",
     locale: "en_US",
     url: "https://aetherbox.io",
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "AetherBox - Compute. Unbound.",
-    description: "From the cloud of the gods to the edge of the earth — we bring Aether closer. Redefining edge computing with sustainable, decentralized infrastructure.",
+    description: "Deploy data centers anywhere in the world. Solar-powered, self-managed, and built for businesses that need reliable computing without the cloud. Redefining edge computing with sustainable, decentralized infrastructure.",
     images: ["/og-image.jpg"],
   },
   icons: {

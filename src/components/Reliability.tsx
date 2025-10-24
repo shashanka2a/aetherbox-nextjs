@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import { AlertTriangle, Shield, Zap, Clock } from "lucide-react";
+import { AlertTriangle } from "lucide-react";
 
 export function Reliability() {
   const ref = useRef(null);
@@ -39,26 +39,6 @@ export function Reliability() {
     }
   ];
 
-  const solutions = [
-    {
-      icon: Shield,
-      title: "Decentralized Architecture",
-      description: "No single points of failure. When one node goes down, others continue operating seamlessly.",
-      color: "#7AC8FF"
-    },
-    {
-      icon: Zap,
-      title: "Renewable Microgrids", 
-      description: "Solar-powered infrastructure with battery backup ensures 99.9% uptime even during grid failures.",
-      color: "#F5C542"
-    },
-    {
-      icon: Clock,
-      title: "Edge Proximity",
-      description: "Local data processing reduces dependency on distant hyperscale data centers and internet connectivity.",
-      color: "#7AC8FF"
-    }
-  ];
 
   return (
     <section ref={ref} className="py-32 bg-gradient-to-b from-[#0F1229] to-[#1B1F3B] relative overflow-hidden">
@@ -136,57 +116,6 @@ export function Reliability() {
           </div>
         </div>
 
-        {/* AetherBox Solutions */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ delay: 0.8 }}
-          className="text-center mb-12"
-        >
-          <h3 className="text-4xl text-white mb-6">
-            How AetherBox Solves This
-          </h3>
-          <p className="text-xl text-white/60 max-w-2xl mx-auto">
-            Our decentralized edge infrastructure eliminates the single points of failure 
-            that plague hyperscale providers.
-          </p>
-        </motion.div>
-
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {solutions.map((solution, index) => {
-            const Icon = solution.icon;
-            return (
-              <motion.div
-                key={solution.title}
-                initial={{ opacity: 0, y: 30 }}
-                animate={isInView ? { opacity: 1, y: 0 } : {}}
-                transition={{ delay: 1 + index * 0.1 }}
-                className="relative bg-[#1B1F3B] rounded-2xl p-8 border border-white/5 hover:border-[#7AC8FF]/30 transition-all duration-300 group"
-              >
-                <div
-                  className="inline-flex items-center justify-center w-16 h-16 rounded-xl mb-6"
-                  style={{ backgroundColor: `${solution.color}20` }}
-                >
-                  <Icon className="w-8 h-8" style={{ color: solution.color }} />
-                </div>
-                
-                <h4 className="text-2xl text-white mb-4 group-hover:text-[#7AC8FF] transition-colors duration-300">
-                  {solution.title}
-                </h4>
-                
-                <p className="text-white/60 leading-relaxed">
-                  {solution.description}
-                </p>
-                
-                {/* Hover glow */}
-                <div
-                  className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-10 transition-opacity duration-300 blur-xl"
-                  style={{ backgroundColor: solution.color }}
-                />
-              </motion.div>
-            );
-          })}
-        </div>
 
         {/* Call to Action */}
         <motion.div
